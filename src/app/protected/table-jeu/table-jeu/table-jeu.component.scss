@@ -1,0 +1,62 @@
+:host {
+  height: 90vh;
+  display: block;
+  background-image: url("src/assets/img/background/table01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+/*Grille*/
+.grilleTableJeu {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  grid-gap: 1%;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-template-rows: repeat(4,0.5fr);
+  grid-template-areas:
+  "left1 cent1 right1"
+  "left1 cent2 right1"
+  "left2 cent2 right2"
+  "left2 cent3 right2";
+}
+/*Elements de la grille*/
+/*Left*/
+.profil {
+  grid-area: left1;
+  height: 100%;
+  width: 75%;
+  text-align: center;
+  justify-self: center;
+}
+.perso {
+  grid-area: left2;
+  height: 100%;
+  width: 75%;
+  text-align: center;
+  justify-self: center;
+}
+/*Center*/
+.tableHead {
+  grid-area: cent1;
+  text-align: center;
+}
+.chat {
+  grid-area: cent2;
+  text-align: center;
+}
+.tuto {
+  grid-area: cent3;
+  text-align: center;
+}
+/*right*/
+.aventure {
+  grid-area: right1;
+  text-align: center;
+}
+.donjon {
+  grid-area: right2;
+  text-align: center;
+}
