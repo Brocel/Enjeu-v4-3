@@ -5,8 +5,6 @@ import { NgxBootstrapModule } from './modules/ngx-bootstrap.module';
 import { AngularMaterialModule } from './modules/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-
 @NgModule({
   declarations: [],
   imports: [

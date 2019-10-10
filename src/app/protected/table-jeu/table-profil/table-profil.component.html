@@ -1,34 +1,29 @@
 <div class="container">
   <div class="col">
-    <div class="card scroll">
-      <div class="card-header">
-        <h3 class="card-title">{{ title }}</h3>
-        <h4 class="card-subtitle">Card subtitle</h4>
-        <ul class="nav nav-tabs card-header-tabs">
-          <li class="nav-item">
-            <a class="nav-link">Tab 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Tab 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Tab 3</a>
-          </li>
-        </ul>
-      </div>
-      <img class="card-img-top" src="../../../../assets/img/icons/mdjIcone.jpg" alt="Card image top">
-      <div class="card-body">
-        <p class="card-text">Nom utilisateur</p>
-        <p class="card-text">email</p>
-        <p class="card-text">Date dernière co</p>
+    <div class="card">
+      <div class="row">
+        <img class="card-img-top col-sm-2" src="../../../../assets/img/icons/mdjIcone.jpg" alt="Card image top">
+        <h4 class="col-md-6">{{ nomJoueur }}</h4>
       </div>
       <div class="card-body">
-        <p class="card-text">Statistiques</p>
-        <p class="card-text">Nbr de perso actifs</p>
-        <p class="card-text">Nbr de parties jouées(tuto)</p>
-        <p class="card-text">Nbr de parties jouées(donjon)</p>
-        <p class="card-text">Nbr de parties jouées(aventure)</p>
-        <p class="card-text">Nbr de compagnons</p>
+        <mat-tab-group>
+          <mat-tab label="Informations Générales">
+            <p>Nom utilisateur</p>
+            <p>mail</p>
+            <p>Date dernière co</p>
+          </mat-tab>
+          <mat-tab label="Statistiques">
+            <p>Nbr de perso actifs</p>
+            <p>Nbr de parties jouées(tuto)</p>
+            <p>Nbr de parties jouées(donjon)</p>
+            <p>Nbr de parties jouées(aventure)</p>
+            <p>Nbr de compagnons</p>
+          </mat-tab>
+          <mat-tab label="Third">
+
+          </mat-tab>
+        </mat-tab-group>
       </div>
+    </div>
   </div>
 </div>

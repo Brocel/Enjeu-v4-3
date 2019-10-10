@@ -7,20 +7,18 @@
     max-height: 300px;
 }
 .card-text {
-  color: white;
   padding-top: 7%;
   padding-bottom: 1%;
 }
 .card-header {
   background-color: rgba(0,0,0,0);
+  padding-left: 1%;
 }
-img {
-  border-radius: 25rem;
-  height: 120px;
-  width: 120px;
+* {
+  overflow-x: hidden;
+  color: white;
+
 }
-.scroll {
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    scrollbar: none;
+.mat-tab-label {
+  color: white;
 }

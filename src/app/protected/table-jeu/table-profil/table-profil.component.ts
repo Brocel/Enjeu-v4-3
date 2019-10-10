@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableProfilComponent implements OnInit {
 
+  nomJoueur: string= 'Brocel';
+
   constructor() { }
 
   ngOnInit() {
