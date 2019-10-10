@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableJeuComponent implements OnInit {
 
+  titL1: string = "Profil Joueur";
+  titL2: string = "Personnages";
+  titR: string = "Commencer une partie";
+
   constructor() { }
 
   ngOnInit() {
