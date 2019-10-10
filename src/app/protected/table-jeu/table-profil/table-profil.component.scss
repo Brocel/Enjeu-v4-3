@@ -19,3 +19,7 @@ img {
   height: 120px;
   width: 120px;
 }
+.scroll {
+    overflow-y: auto;
+    scrollbar: none;
+}
