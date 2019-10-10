@@ -15,7 +15,7 @@
   padding: 1%;
   grid-gap: 1%;
   grid-template-columns: repeat(3,1fr) ;
-  grid-template-rows: repeat(4,0.5fr);
+  grid-template-rows: 0.5fr 2fr 0.5fr 2fr;
   grid-template-areas:
   "titL1 titC titR"
   "contL1 contC contR1"
