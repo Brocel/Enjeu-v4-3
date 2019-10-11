@@ -1,29 +1,26 @@
-<div class="container">
-  <div class="col">
-    <div class="card">
-      <div class="row">
-        <img class="card-img-top col-sm-2" src="../../../../assets/img/icons/mdjIcone.jpg" alt="Card image top">
-        <h4 class="col-md-6">{{ nomJoueur }}</h4>
-      </div>
-      <div class="card-body">
-        <mat-tab-group>
-          <mat-tab label="Informations Générales">
-            <p>Nom utilisateur</p>
-            <p>mail</p>
-            <p>Date dernière co</p>
-          </mat-tab>
-          <mat-tab label="Statistiques">
-            <p>Nbr de perso actifs</p>
-            <p>Nbr de parties jouées(tuto)</p>
-            <p>Nbr de parties jouées(donjon)</p>
-            <p>Nbr de parties jouées(aventure)</p>
-            <p>Nbr de compagnons</p>
-          </mat-tab>
-          <mat-tab label="Third">
-
-          </mat-tab>
-        </mat-tab-group>
-      </div>
+<div class="container bGround">
+  <div class="row">
+    <div class="col-md-2 cardHead">
+      <img class="" src='../../../../assets/img/icons/mdjIcone.jpg'>
     </div>
-  </div>
+    <div class="col-md-10 text-left">
+      <h3 class="cardHead">{{ nomJoueur }}</h3>
+    </div>
+    <mat-tab-group>
+      <mat-tab label="Infos" title="Informations générales">
+        <p>Nom utilisateur</p>
+        <p>mail</p>
+        <p>Date dernière co</p>
+      </mat-tab>
+      <mat-tab label="Stats" title="Statistiques">
+        <p>Nbr de perso actifs</p>
+        <p>Nbr de parties jouées(tuto)</p>
+        <p>Nbr de parties jouées(donjon)</p>
+        <p>Nbr de parties jouées(aventure)</p>
+        <p>Nbr de compagnons</p>
+      </mat-tab>
+      <mat-tab label="Third" title="Third label">
+      </mat-tab>
+    </mat-tab-group>
+</div>
 </div>
