@@ -15,11 +15,10 @@
   padding: 1%;
   grid-gap: 1%;
   grid-template-columns: 1fr 1.5fr 1fr;
-  grid-template-rows: 0.5fr 2fr 0.5fr 2fr;
+  grid-template-rows: repeat(3,1fr);
   grid-template-areas:
-  "titL1 titC titR"
   "contL1 contC contR1"
-  "titL2 contC contR2"
+  "contL2 contC contR2"
   "contL2 contC contR3";
 }
 /*Elements de la grille*/
