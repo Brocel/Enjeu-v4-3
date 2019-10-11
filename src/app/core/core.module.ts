@@ -8,15 +8,13 @@ import { ProtectedModule } from '../protected/protected.module';
 import { AuthService } from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
 import { PersonnagesService } from './services/personnages.service';
-import { ChatService } from './services/chat.service';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { CardTabDirective } from './directives/card-tab.directive';
 
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, CardTabDirective],
+  declarations: [NavbarComponent, FooterComponent],
   imports: [
     CommonModule,
     PublicModule,
@@ -27,15 +25,13 @@ import { CardTabDirective } from './directives/card-tab.directive';
     CommonModule,
     HttpClientModule,
     NavbarComponent,
-    FooterComponent,
-    CardTabDirective
+    FooterComponent
 
   ],
   providers: [
     AuthService,
     AuthGuardService,
-    PersonnagesService,
-    ChatService
+    PersonnagesService
   ]
 })
 export class CoreModule {
