@@ -8,11 +8,12 @@ import { TableAventureComponent } from './table-aventure/table-aventure.componen
 import { TableDonjonComponent } from './table-donjon/table-donjon.component';
 import { TableTutoComponent } from './table-tuto/table-tuto.component';
 import { TableHeadComponent } from './table-head/table-head.component';
+import { ProfilStatsComponent } from './table-profil/profil-stats/profil-stats.component';
 
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableChatComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, TableHeadComponent],
+  declarations: [TableJeuComponent, TableChatComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, TableHeadComponent, ProfilStatsComponent],
   imports: [
     SharedModule
   ]

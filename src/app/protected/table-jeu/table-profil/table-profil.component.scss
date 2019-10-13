@@ -1,14 +1,18 @@
 .bGround {
     border: none;
-    width: 75%;
-    background-image: url('/assets/img/background/plateau.jpg');
+    width: 80%;
+    background-image: url('/assets/img/background/parchemin.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    padding-top: 5%;
+    padding-top: 10%;
+    padding-left: 5%;
 }
-.cardHead {
-  background-color: rgb(218,165,32,0.1);
+.wrapper {
+  width: 95%;
+}
+.enTete {
+  padding-left: 6%;
 }
 /*Material Tabs*/
 .mat-tab-group {
@@ -26,7 +30,10 @@
   color: white;
 }
 .mat-tab-label-active {
-  background-color: rgb(218,165,32);
+  background-color: rgba(218,165,32,0.5);
+}
+.mat-tab-label:hover {
+  background-color: rgba(32,165,218,0.3);
 }
 /*Image joueur*/
 img {

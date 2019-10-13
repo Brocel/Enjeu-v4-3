@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ProfileTabsComponent } from './profile-tabs/profile-tabs.component';
+import { ProfilStatsComponent } from './profil-stats/profile-stat.component';
 
 @Component({
   selector: 'enjeu-table-profil',
