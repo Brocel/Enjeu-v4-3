@@ -18,7 +18,7 @@ export class ProfilStatsComponent implements OnInit {
 /*Profil : informations*/
   export interface InfoProfil {
     propriete: string;
-    valeur: number;
+    valeur: string;
   }
 
   const INFO_DATA: InfoProfil[] = [
