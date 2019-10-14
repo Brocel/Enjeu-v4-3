@@ -6,6 +6,7 @@ import { AngularMaterialModule } from './modules/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material';
 import { MatCardModule } from '@angular/material';
+import { MatDividerModule } from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -17,7 +18,8 @@ import { MatCardModule } from '@angular/material';
     AngularMaterialModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ],
   exports: [
     CommonModule, //préparation de la factorisation du CommonModule
@@ -27,7 +29,8 @@ import { MatCardModule } from '@angular/material';
     AngularMaterialModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ]
 })
 export class SharedModule { }
