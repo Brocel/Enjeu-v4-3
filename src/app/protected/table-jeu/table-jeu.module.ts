@@ -11,11 +11,14 @@ import { TableHeadComponent } from './table-head/table-head.component';
 import { ProfilStatsComponent } from './table-profil/profil-stats/profil-stats.component';
 import { ProfilInfosComponent } from './table-profil/profil-infos/profil-infos.component';
 import { ProfilFriendsComponent } from './table-profil/profil-friends/profil-friends.component';
+import { PersonnageMainComponent } from './table-personnage/personnage-main/personnage-main.component';
+import { PersonnageMenuComponent } from './table-personnage/personnage-menu/personnage-menu.component';
+import { PersonnageCreateComponent } from './table-personnage/personnage-create/personnage-create.component';
 
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableChatComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, TableHeadComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent],
+  declarations: [TableJeuComponent, TableChatComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, TableHeadComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent],
   imports: [
     SharedModule
   ]

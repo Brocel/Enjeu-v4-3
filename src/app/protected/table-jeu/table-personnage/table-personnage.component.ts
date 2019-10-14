@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablePersonnageComponent implements OnInit {
 
-  nomPerso: string = 'Metalchemist';
 
   constructor() { }
 
