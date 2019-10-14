@@ -11,5 +11,18 @@ export class PersonnageMenuComponent implements OnInit {
 
   ngOnInit() {
   }
+  menuColumns = ['propriete', 'valeur'];
+  dataMenu = MENU_DATA;
+  }
+  /*Profil : statistiques*/
+  export interface MenuProfil {
+    propriete: string;
+    valeur: string;
+  }
 
-}
+  const MENU_DATA: MenuProfil[] = [
+    {propriete: 'Rôle', valeur: 'MdJ/Joueur'},
+    {propriete: 'select perso main', valeur: 'todo liste'},
+    {propriete: 'detail perso', valeur: 'liste'},
+    {propriete: 'suprrimer', valeur: 'liste'},
+  ];
