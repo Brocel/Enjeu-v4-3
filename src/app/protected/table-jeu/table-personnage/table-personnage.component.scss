@@ -1,15 +1,37 @@
-.card {
+.bGround {
     border: none;
-    background-image: url('/assets/img/background/plateau.jpg');
+    width: 80%;
+    background-image: url('/assets/img/background/parchemin.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    padding : 10%;
+    padding-top: 15%;
 }
-.card-text {
+.wrapper {
+  width: 95%;
+}
+.enTete {
+  padding-left: 6%;
+}
+/*Material Tabs*/
+.mat-tab-group {
+  text-align: center;
+  width: 100%;
   color: white;
-  padding-top: 7%;
-  padding-bottom: 1%;
 }
-.card-header {
-  background-color: rgba(0,0,0,0);
+.mat-tab-body-wrapper {
+  color: white;
+}
+.mat-tab {
+  color: white;
+}
+.mat-tab-label {
+  color: white;
+}
+.mat-tab-label-active {
+  background-color: rgba(218,165,32,0.5);
+}
+.mat-tab-label:hover {
+  background-color: rgba(32,165,218,0.3);
 }

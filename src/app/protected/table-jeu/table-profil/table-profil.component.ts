@@ -8,7 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class TableProfilComponent implements OnInit {
 
-  nomJoueur: string= 'Brocel';
+  nomJoueur: string = 'Brocel';
 
   constructor() { }
 
