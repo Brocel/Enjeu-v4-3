@@ -11,21 +11,18 @@ export class ProfilStatsComponent implements OnInit {
 
   ngOnInit() {
   }
-  displayedColumns = ['position', 'name', 'weight', 'symbol'];
-    dataSource = ELEMENT_DATA;
+  infoColumns = ['propriete', 'valeur'];
+  dataInfo = INFO_DATA;
   }
 
-  export interface PeriodicElement {
-    name: string;
-    position: number;
-    weight: number;
-    symbol: string;
+  export interface InfoProfil {
+    propriete: string;
+    valeur: number;
   }
 
-  const ELEMENT_DATA: PeriodicElement[] = [
-    {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-    {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-    {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-    {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-    {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
+  const INFO_DATA: InfoProfil[] = [
+    {propriete: 'E-mail', valeur: 'userEmail'},
+    {propriete: 'prop2', valeur: 'val2'},
+    {propriete: 'prop3', valeur: 'val3'},
+    {propriete: 'prop4', valeur: 'val4'},
   ];
