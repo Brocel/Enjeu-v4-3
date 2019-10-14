@@ -5,6 +5,7 @@ import { NgxBootstrapModule } from './modules/ngx-bootstrap.module';
 import { AngularMaterialModule } from './modules/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -15,7 +16,8 @@ import { MatTableModule } from '@angular/material';
     NgxBootstrapModule,
     AngularMaterialModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule
   ],
   exports: [
     CommonModule, //préparation de la factorisation du CommonModule
@@ -24,7 +26,8 @@ import { MatTableModule } from '@angular/material';
     NgxBootstrapModule,
     AngularMaterialModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule
   ]
 })
 export class SharedModule { }
