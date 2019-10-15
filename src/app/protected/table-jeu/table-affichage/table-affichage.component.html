@@ -1,7 +1,7 @@
 <div class="bGround">
   <enjeu-affichage-defaut *ngIf="affDefaut"></enjeu-affichage-defaut>
-  <enjeu-affichage-chat></enjeu-affichage-chat>
-  <enjeu-affichage-create></enjeu-affichage-create>
-  <enjeu-affichage-details></enjeu-affichage-details>
-  <enjeu-affichage-game></enjeu-affichage-game>
+  <enjeu-affichage-chat *ngIf="affChat"></enjeu-affichage-chat>
+  <enjeu-affichage-create *ngIf="affCreate"></enjeu-affichage-create>
+  <enjeu-affichage-details *ngIf="affDetails"></enjeu-affichage-details>
+  <enjeu-affichage-game *ngIf="affGame"></enjeu-affichage-game>
 </div>
