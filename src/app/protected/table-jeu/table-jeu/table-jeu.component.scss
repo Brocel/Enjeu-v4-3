@@ -1,20 +1,26 @@
 :host {
-  height: 90vh;
+  // height: 90vh; //à virer, puis régler la taille de l'appli
   display: block;
   background-image: url("src/assets/img/background/table01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
+body {
+  // height: 100%;
+  // width: 100%;
+  margin: 0;
+  padding: 0;
+}
 /*Grille*/
 .grilleTableJeu {
   height: 100%;
+  width: 100%;
   display: grid;
   align-items: center;
   justify-content: center;
-  padding: 1%;
   grid-gap: 1%;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 6fr 3fr;
   grid-template-rows: repeat(3,1fr);
   grid-template-areas:
   "contL1 contC contR1"
@@ -26,31 +32,42 @@
 .profil {
   grid-area: contL1;
   height: 100%;
-  width: 75%;
+  width: 100%;
   text-align: center;
 }
 .perso {
   grid-area: contL2;
   height: 100%;
-  width: 75%;
+  width: 100%;
   text-align: center;
 }
 /*Center*/
 .aff {
   grid-area: contC;
+  height: 100%;
+  width: 100%;
   text-align: center;
   justify-self: center;
 }
 /*right*/
 .aventure {
   grid-area: contR1;
+  height: 100%;
+  width: 100%;
   text-align: center;
+  justify-self: right;
 }
 .donjon {
   grid-area: contR2;
+  height: 100%;
+  width: 100%;
   text-align: center;
+  justify-self: right;
 }
 .tuto {
   grid-area: contR3;
+  height: 100%;
+  width: 100%;
   text-align: center;
+  justify-self: right;
 }
