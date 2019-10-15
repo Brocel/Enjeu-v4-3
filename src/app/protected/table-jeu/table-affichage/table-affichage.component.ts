@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableAffichageComponent implements OnInit {
 
-  constructor() { }
+  private affDefaut: boolean;
+  private affChat: boolean;
+  private affCreate: boolean;
+  private affDetails: boolean;
+  private affGame: boolean;
+
+  constructor() {
+    this.affDefaut = true;
+    this.affChat = false;
+    this.affCreate = false;
+    this.affDetails = false;
+    this.affGame = false;
+  }
 
   ngOnInit() {
   }
+
+
 
 }
