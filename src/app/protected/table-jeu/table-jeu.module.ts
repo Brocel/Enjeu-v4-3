@@ -17,10 +17,11 @@ import { AffichageChatComponent } from './table-affichage/affichage-chat/afficha
 import { AffichageCreateComponent } from './table-affichage/affichage-create/affichage-create.component';
 import { AffichageDetailsComponent } from './table-affichage/affichage-details/affichage-details.component';
 import { AffichageGameComponent } from './table-affichage/affichage-game/affichage-game.component';
+import { AffichageDefautComponent } from './table-affichage/affichage-defaut/affichage-defaut.component';
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent],
+  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent],
   imports: [
     SharedModule
   ]
