@@ -13,8 +13,8 @@
   align-items: center;
   justify-content: center;
   padding: 1%;
-  grid-gap: 5%;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 1%;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3,1fr);
   grid-template-areas:
   "contL1 contC contR1"
@@ -23,47 +23,25 @@
 }
 /*Elements de la grille*/
 /*Left*/
-.titL1 {
-  grid-area: titL1;
-  height: 100%;
-  width: 75%;
-  text-align: center;
-  justify-self: center;
-}
 .profil {
   grid-area: contL1;
   height: 100%;
   width: 75%;
   text-align: center;
-  justify-self: center;
-}
-.titL2 {
-  grid-area: titL2;
-  height: 100%;
-  width: 75%;
-  text-align: center;
-  justify-self: center;
 }
 .perso {
   grid-area: contL2;
   height: 100%;
   width: 75%;
   text-align: center;
-  justify-self: center;
 }
 /*Center*/
 .aff {
   grid-area: contC;
   text-align: center;
-}
-/*right*/
-.titR {
-  grid-area: titR;
-  height: 100%;
-  width: 75%;
-  text-align: center;
   justify-self: center;
 }
+/*right*/
 .aventure {
   grid-area: contR1;
   text-align: center;
