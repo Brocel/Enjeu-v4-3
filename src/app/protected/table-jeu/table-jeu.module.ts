@@ -13,12 +13,14 @@ import { PersonnageMainComponent } from './table-personnage/personnage-main/pers
 import { PersonnageMenuComponent } from './table-personnage/personnage-menu/personnage-menu.component';
 import { PersonnageCreateComponent } from './table-personnage/personnage-create/personnage-create.component';
 import { TableAffichageComponent } from './table-affichage/table-affichage.component';
-import { TableChatComponent } from './table-affichage/table-chat/table-chat.component';
-
+import { AffichageChatComponent } from './table-affichage/affichage-chat/affichage-chat.component';
+import { AffichageCreateComponent } from './table-affichage/affichage-create/affichage-create.component';
+import { AffichageDetailsComponent } from './table-affichage/affichage-details/affichage-details.component';
+import { AffichageGameComponent } from './table-affichage/affichage-game/affichage-game.component';
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableChatComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent],
+  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent],
   imports: [
     SharedModule
   ]
