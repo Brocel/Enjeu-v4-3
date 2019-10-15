@@ -17,7 +17,7 @@
   grid-template-columns: 1fr 1.5fr 1fr;
   grid-template-rows: repeat(3,1fr);
   grid-template-areas:
-  "contL1 titC contR1"
+  "contL1 contC contR1"
   "contL2 contC contR2"
   "contL2 contC contR3";
 }
@@ -52,11 +52,7 @@
   justify-self: center;
 }
 /*Center*/
-.tableHead {
-  grid-area: titC;
-  text-align: center;
-}
-.chat {
+.aff {
   grid-area: contC;
   text-align: center;
 }
