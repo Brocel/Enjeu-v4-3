@@ -4,16 +4,18 @@
   align-items: center;
   grid-gap: 1%;
   grid-template-areas:
-  "top"
-  "bot";
+  "topC"
+  "botC";
 }
 .topCard {
-  grid-area: top;
+  grid-area: topC;
+  max-width: 25vw;
   text-align: center;
   justify-self: center;
 }
 .botCard {
-  grid-area: bot;
+  grid-area: botC;
+  max-width: 25vw;
   text-align: center;
   justify-self: center;
 }
