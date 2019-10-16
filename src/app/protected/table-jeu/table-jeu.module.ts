@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TableJeuComponent } from './table-jeu/table-jeu.component';
 /*Données*/
-import { CardDatasComponent } from './table-jeu/datas/card-datas/card-datas.component';
+import { CardDatasComponent } from './datas/card-datas/card-datas.component';
 
 /*components de Left*/
 import { TableLeftComponent } from './table-left/table-left.component';
@@ -29,12 +29,15 @@ import { TableRightComponent } from './table-right/table-right.component';
 import { TableAventureComponent } from './table-right/table-aventure/table-aventure.component';
 import { TableDonjonComponent } from './table-right/table-donjon/table-donjon.component';
 import { TableTutoComponent } from './table-right/table-tuto/table-tuto.component';
+import { RightCardComponent } from './models/cards/right-card/right-card.component';
+import { LeftTableComponent } from './models/tables/left-table/left-table.component';
+import { RightTableComponent } from './models/tables/right-table/right-table.component';
 
 
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, LeftCardComponent, CardDatasComponent],
+  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, LeftCardComponent, CardDatasComponent, RightCardComponent, LeftTableComponent, RightTableComponent],
   imports: [
     SharedModule
   ]

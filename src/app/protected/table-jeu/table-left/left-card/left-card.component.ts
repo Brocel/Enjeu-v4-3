@@ -5,8 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './left-card.component.html',
   styleUrls: ['./left-card.component.scss']
 })
-export class LeftCardComponent implements OnInit {
+export class LeftCardComponent {
 
-  @Input()
+  // @Input()
 
 }
