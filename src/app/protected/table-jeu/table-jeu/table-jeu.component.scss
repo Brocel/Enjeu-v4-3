@@ -18,9 +18,8 @@ body {
   width: 100%;
   display: grid;
   align-items: center;
-  justify-content: center;
   grid-gap: 1%;
-  grid-template-columns: 1fr 6fr 3fr;
+  grid-template-columns: 20vw 1fr 20vw;
   grid-template-rows: repeat(3,1fr);
   grid-template-areas:
   "contL1 contC contR1"
@@ -32,14 +31,16 @@ body {
 .profil {
   grid-area: contL1;
   height: 100%;
-  width: 100%;
+  width: 80%;
   text-align: center;
+  justify-self: center;
 }
 .perso {
   grid-area: contL2;
   height: 100%;
-  width: 100%;
+  width: 80%;
   text-align: center;
+  justify-self: center;
 }
 /*Center*/
 .aff {
@@ -53,21 +54,21 @@ body {
 .aventure {
   grid-area: contR1;
   height: 100%;
-  width: 100%;
+  width: 80%;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
 }
 .donjon {
   grid-area: contR2;
   height: 100%;
-  width: 100%;
+  width: 80%;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
 }
 .tuto {
   grid-area: contR3;
   height: 100%;
-  width: 100%;
+  width: 80%;
   text-align: center;
-  justify-self: right;
+  justify-self: center;
 }
