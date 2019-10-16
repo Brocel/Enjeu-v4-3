@@ -20,10 +20,10 @@ body {
   align-items: center;
   grid-gap: 1%;
   grid-template-columns: 25vw 1fr 25vw;
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: 30% 20% 30% 20%;
   grid-template-areas:
   "contL1 contC contR1"
-  "contL2 contC contR2"
+  ". contC contR2"
   "contL2 contC contR3";
 }
 /*Elements de la grille*/
