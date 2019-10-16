@@ -1,5 +1,5 @@
 :host {
-  // height: 90vh; //à virer, puis régler la taille de l'appli
+  height: 90vh; //à virer, puis régler la taille de l'appli
   display: block;
   background-image: url("src/assets/img/background/table01.jpg");
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body {
   display: grid;
   align-items: center;
   grid-gap: 1%;
-  grid-template-columns: 20vw 1fr 20vw;
+  grid-template-columns: 25vw 1fr 25vw;
   grid-template-rows: repeat(3,1fr);
   grid-template-areas:
   "contL1 contC contR1"
