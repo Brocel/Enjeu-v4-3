@@ -1,9 +1,10 @@
 .grilleRight {
+  height: 100%;
   width: 100%;
-  padding: 1%;
   display: grid;
   align-items: center;
   grid-gap: 1%;
+  grid-auto-rows: repeat(3,1fr);
   grid-template-areas:
   "topR"
   "midR"
@@ -11,16 +12,19 @@
 }
 .topRight {
   grid-area: topR;
+  width: 100%;
   text-align: center;
   justify-self: center;
 }
 .midRight {
   grid-area: midR;
+  width: 100%;
   text-align: center;
   justify-self: center;
 }
 .botRight {
   grid-area: botR;
+  width: 100%;
   text-align: center;
   justify-self: center;
 }

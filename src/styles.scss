@@ -17,32 +17,33 @@ body {
 }
 /*bGrounds table-jeu components*/
 .bGroundL {
-    width: 80%;
-    max-height: 40vh;
-    border: none;
-    background-image: url('/assets/img/background/parchemin.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    padding : 10%;
-    padding-top: 15%;
+  width: 80%;
+  border: none;
+  background-image: url('/assets/img/background/parchemin.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding : 10%;
+  padding-top: 15%;
 }
 .bGroundAff {
-    border: none;
-    background-image: url('/assets/img/background/parcheminV.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    padding : 10%;
-    padding-top: 15%;
+  width: 100%;
+  border: none;
+  background-image: url('/assets/img/background/parcheminV.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding : 10%;
+  padding-top: 15%;
 }
 .bGroundR {
-    border: none;
-    background-image: url('/assets/img/background/plateauH.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    padding : 10%;
+  width: 80%;
+  border: none;
+  background-image: url('/assets/img/background/plateauH.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding : 5%;
 }
 
 /* Material icons */
