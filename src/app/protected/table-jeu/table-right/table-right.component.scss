@@ -1,0 +1,26 @@
+.grilleRight {
+  width: 100%;
+  padding: 1%;
+  display: grid;
+  align-items: center;
+  grid-gap: 1%;
+  grid-template-areas:
+  "topR"
+  "midR"
+  "botR";
+}
+.topRight {
+  grid-area: topR;
+  text-align: center;
+  justify-self: center;
+}
+.midRight {
+  grid-area: midR;
+  text-align: center;
+  justify-self: center;
+}
+.botRight {
+  grid-area: botR;
+  text-align: center;
+  justify-self: center;
+}
