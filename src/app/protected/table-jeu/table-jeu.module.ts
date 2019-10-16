@@ -4,6 +4,7 @@ import { TableJeuComponent } from './table-jeu/table-jeu.component';
 /*components de Left*/
 import { TableLeftComponent } from './table-left/table-left.component';
 import { TableProfilComponent } from './table-left/table-profil/table-profil.component';
+import { LeftCardComponent } from './table-left/left-card/left-card.component';
 import { ProfilStatsComponent } from './table-left/table-profil/profil-stats/profil-stats.component';
 import { ProfilInfosComponent } from './table-left/table-profil/profil-infos/profil-infos.component';
 import { ProfilFriendsComponent } from './table-left/table-profil/profil-friends/profil-friends.component';
@@ -30,7 +31,7 @@ import { TableTutoComponent } from './table-right/table-tuto/table-tuto.componen
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent],
+  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, LeftCardComponent],
   imports: [
     SharedModule
   ]
