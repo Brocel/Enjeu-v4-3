@@ -1,0 +1,19 @@
+.grilleLeft {
+  padding: 1%;
+  display: grid;
+  align-items: center;
+  grid-gap: 1%;
+  grid-template-areas:
+  "top"
+  "bot";
+}
+.topCard {
+  grid-area: top;
+  text-align: center;
+  justify-self: center;
+}
+.botCard {
+  grid-area: bot;
+  text-align: center;
+  justify-self: center;
+}
