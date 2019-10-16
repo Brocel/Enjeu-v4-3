@@ -5,7 +5,7 @@
   display: grid;
   align-items: center;
   grid-gap: 1%;
-  grid-auto-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
   grid-template-areas:
   "topL"
   "botL";
