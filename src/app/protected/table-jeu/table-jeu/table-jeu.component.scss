@@ -16,11 +16,12 @@ body {
 .grilleTableJeu {
   height: 100%;
   width: 100%;
+  padding: 1%;
   display: grid;
   align-items: center;
   grid-gap: 1%;
   grid-template-columns: 25vw 1fr 25vw;
-  grid-template-rows: 30% 20% 30% 20%;
+  grid-template-rows: 30% 20% 30% ;
   grid-template-areas:
   "contL1 contC contR1"
   ". contC contR2"
