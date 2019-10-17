@@ -22,17 +22,15 @@ import { AffichageGameComponent } from './table-center/table-affichage/affichage
 import { AffichageDefautComponent } from './table-center/table-affichage/affichage-defaut/affichage-defaut.component';
 /*components de Right*/
 import { TableRightComponent } from './table-right/table-right.component';
-import { TableAventureComponent } from './table-right/table-aventure/table-aventure.component';
-import { TableDonjonComponent } from './table-right/table-donjon/table-donjon.component';
-import { TableTutoComponent } from './table-right/table-tuto/table-tuto.component';
 import { RightElementComponent } from './table-right/right-element/right-element.component';
+import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
 
 
 
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, TableAventureComponent, TableDonjonComponent, TableTutoComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent],
+  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent],
   imports: [
     SharedModule
   ]

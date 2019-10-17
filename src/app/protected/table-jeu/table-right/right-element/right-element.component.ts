@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'enjeu-right-element',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-element.component.scss']
 })
 export class RightElementComponent implements OnInit {
+
+  @Input() title: string;
+  @Input() subTitre: string;
+  @Input() bouton: string;
 
   constructor() { }
 
