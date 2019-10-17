@@ -1,5 +1,15 @@
-<div class="grilleHome">
-  <enjeu-home-banner class="ban"></enjeu-home-banner>
-  <enjeu-home-signin *ngIf="!isAuth" class="feat1"></enjeu-home-signin>
-  <enjeu-home-signup *ngIf="!isAuth" class="feat2"></enjeu-home-signup>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <enjeu-home-banner></enjeu-home-banner>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5 centerCol">
+      <enjeu-home-signin *ngIf="!isAuth" class="feat1"></enjeu-home-signin>
+    </div>
+    <div class="col-5 centerCol">
+      <enjeu-home-signup *ngIf="!isAuth" class="feat2"></enjeu-home-signup>
+    </div>
+  </div>
 </div>

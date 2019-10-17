@@ -15,7 +15,15 @@ body {
   margin: 0;
   padding: 0;
 }
-/*bGrounds table-jeu components*/
+/*back grounds*/
+.tableJeuBG {
+  background-image: url("src/assets/img/background/table01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+}
 .bGroundL {
   width: 80%;
   border: none;
@@ -27,7 +35,7 @@ body {
   padding-top: 15%;
 }
 .bGroundTable {
-  min-height: 70vh;
+  min-height: 80vh;
   border: none;
   background-image: url('/assets/img/background/table02.jpg');
   background-repeat: no-repeat;
