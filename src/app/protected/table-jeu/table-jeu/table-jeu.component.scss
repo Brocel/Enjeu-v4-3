@@ -11,44 +11,4 @@ body {
   background-position: center;
   background-size: 100% 100%;
   align-items: center;
-
-}
-/*Grille*/
-.grilleTableJeu {
-  height: 90vh;
-  width: 100%;
-  padding: 1%;
-  background-image: url("src/assets/img/background/table01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  display: grid;
-  align-items: center;
-  grid-gap: 1%;
-  grid-template-columns: 25vw 1fr 25vw;
-  grid-template-areas:
-  "left center right";
-}
-/*Elements de la grille*/
-/*Left*/
-.leftCont {
-  grid-area: left;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  justify-self: center;
-}
-.centerCont {
-  grid-area: center;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  justify-self: center;
-}
-.rightCont {
-  grid-area: right;
-  height: 60%;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
 }
