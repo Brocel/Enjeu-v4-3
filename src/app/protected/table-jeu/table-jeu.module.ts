@@ -3,14 +3,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { TableJeuComponent } from './table-jeu/table-jeu.component';
 /*components de Left*/
 import { TableLeftComponent } from './table-left/table-left.component';
-import { TableProfilComponent } from './table-left/table-profil/table-profil.component';
-import { ProfilStatsComponent } from './table-left/table-profil/profil-stats/profil-stats.component';
-import { ProfilInfosComponent } from './table-left/table-profil/profil-infos/profil-infos.component';
-import { ProfilFriendsComponent } from './table-left/table-profil/profil-friends/profil-friends.component';
-import { TablePersonnageComponent } from './table-left/table-personnage/table-personnage.component';
-import { PersonnageMainComponent } from './table-left/table-personnage/personnage-main/personnage-main.component';
-import { PersonnageMenuComponent } from './table-left/table-personnage/personnage-menu/personnage-menu.component';
-import { PersonnageCreateComponent } from './table-left/table-personnage/personnage-create/personnage-create.component';
+import { LeftElementComponent } from './table-left/left-element/left-element.component';
+import { LeftFeatureComponent } from './table-left/left-feature/left-feature.component';
 /*components de Center*/
 import { TableCenterComponent } from './table-center/table-center.component';
 import { TableHeadComponent } from './table-center/table-head/table-head.component';
@@ -24,9 +18,6 @@ import { AffichageDefautComponent } from './table-center/table-affichage/afficha
 import { TableRightComponent } from './table-right/table-right.component';
 import { RightElementComponent } from './table-right/right-element/right-element.component';
 import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
-import { LeftElementComponent } from './table-left/left-element/left-element.component';
-import { LeftFeatureComponent } from './table-left/left-feature/left-feature.component';
-
 
 @NgModule({
   declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
