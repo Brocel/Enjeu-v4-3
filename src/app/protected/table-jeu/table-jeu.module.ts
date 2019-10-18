@@ -20,7 +20,7 @@ import { RightElementComponent } from './table-right/right-element/right-element
 import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
 
 @NgModule({
-  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
+  declarations: [TableJeuComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
   imports: [
     SharedModule
   ]
