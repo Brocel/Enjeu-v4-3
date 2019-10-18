@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'enjeu-left-element',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-element.component.scss']
 })
 export class LeftElementComponent implements OnInit {
+
+  @Input() title: string;
+  @Input() subTitre: string;
+  @Input() icon: string;
 
   constructor() { }
 

@@ -1,1 +1,19 @@
-<p>left-element works!</p>
+<div class="bGroundL">
+    <div class="row enTete">
+      <div class="col-md-2">
+        <img [src]="icon" alt="?!?">
+      </div>
+      <div class="col-md-10 text-left">
+        <h3>{{persoName|titlecase}}</h3>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
+    <div class="row">
+      <mat-tab-group>
+        <mat-tab label="Informations">
+          <enjeu-profil-infos></enjeu-profil-infos>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+</div>
