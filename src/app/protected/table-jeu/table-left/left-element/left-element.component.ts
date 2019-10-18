@@ -7,9 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LeftElementComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() subTitre: string;
+  @Input() name: string;
   @Input() icon: string;
+  @Input() tabLabel: string;
+  @Input() dataSrc: any;
+  @Input() dataColumns: any;
 
   constructor() { }
 
