@@ -21,5 +21,5 @@ export class LeftElementComponent implements OnInit {
   ngOnInit() {
 
   }
-
+  dataColumns = ['propriete', 'valeur'];
 }
