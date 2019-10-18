@@ -24,13 +24,15 @@ import { AffichageDefautComponent } from './table-center/table-affichage/afficha
 import { TableRightComponent } from './table-right/table-right.component';
 import { RightElementComponent } from './table-right/right-element/right-element.component';
 import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
+import { LeftElementComponent } from './table-left/left-element/left-element.component';
+import { LeftFeatureComponent } from './table-left/left-feature/left-feature.component';
 
 
 
 
 
 @NgModule({
-  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent],
+  declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
   imports: [
     SharedModule
   ]
