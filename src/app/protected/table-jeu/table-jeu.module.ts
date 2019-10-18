@@ -28,9 +28,6 @@ import { LeftElementComponent } from './table-left/left-element/left-element.com
 import { LeftFeatureComponent } from './table-left/left-feature/left-feature.component';
 
 
-
-
-
 @NgModule({
   declarations: [TableJeuComponent, TableProfilComponent, TablePersonnageComponent, ProfilStatsComponent, ProfilInfosComponent, ProfilFriendsComponent, PersonnageMainComponent, PersonnageMenuComponent, PersonnageCreateComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
   imports: [

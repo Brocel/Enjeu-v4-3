@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {PROFIL_INFO_DATA} from 'src/app/shared/mocks/mock-datas-left-panel-test';
+import {PROFIL_STATS_DATA} from 'src/app/shared/mocks/mock-datas-left-panel-test';
+import {PROFIL_FRIENDS_DATA} from 'src/app/shared/mocks/mock-datas-left-panel-test';
+import {PERSO_MAIN_DATA} from 'src/app/shared/mocks/mock-datas-left-panel-test';
+import {PERSO_ACTION_DATA} from 'src/app/shared/mocks/mock-datas-left-panel-test';
+import {PERSO_CREATION_DATA} from 'src/app/shared/mocks/mock-datas-left-panel-test';
 
 @Component({
   selector: 'enjeu-left-feature',
@@ -8,17 +14,40 @@ import { Component, OnInit } from '@angular/core';
 export class LeftFeatureComponent implements OnInit {
 
   features;
+
   constructor() { }
 
   ngOnInit() {
+
     this.features = [
       {
         name: 'Brocel',
         icon: '../../../../assets/img/icons/mdjIcone.jpg',
-        tabLabel: 'Informations',
-        dataSrc:  PROFIL_INFO_DATA,
-        dataColumns: ['propriete', 'valeur']
+        tabLabel: {
+          tab1: 'Informations',
+          tab2: 'Statistiques',
+          tab3: 'Compagnons'
+        },
+        dataSrc: {
+          tab1: PROFIL_INFO_DATA,
+          tab2: PROFIL_STATS_DATA,
+          tab3: PROFIL_FRIENDS_DATA
+        }
       },
+      {
+        name: 'Metalchemist',
+        icon: '../../../../assets/img/icons/humHom.jpg',
+        tabLabel: {
+          tab1: 'main',
+          tab2: 'actions',
+          tab3: 'création'
+        },
+        dataSrc: {
+          tab1: PERSO_MAIN_DATA,
+          tab2: PERSO_ACTION_DATA,
+          tab3: PERSO_CREATION_DATA
+        }
+      }
     ];
   }
 }

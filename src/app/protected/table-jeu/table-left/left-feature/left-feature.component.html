@@ -1,1 +1,10 @@
-<p>left-feature works!</p>
+<enjeu-left-element *ngFor="let feature of features"
+  [name]="feature.title"
+  [icon]="feature.subTitre"
+  [tabLabel1]="feature.tabLabel.tab1"
+  [dataSrc1]="feature.dataSrc.tab1"
+  [tabLabel2]="feature.tabLabel.tab2"
+  [dataSrc2]="feature.dataSrc.tab2"
+  [tabLabel3]="feature.tabLabel.tab3"
+  [dataSrc3]="feature.dataSrc.tab3">
+</enjeu-left-element>
