@@ -16,12 +16,12 @@
           <!-- propriété Column -->
           <ng-container matColumnDef="propriete">
             <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let element"> {{element.propriete}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.propriete|titlecase}} </td>
           </ng-container>
           <!-- valeur Column -->
           <ng-container matColumnDef="valeur">
             <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let element"> {{element.valeur}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.valeur|titlecase}} </td>
           </ng-container>
 
           <tr mat-row *matRowDef="let row; columns: dataColumns;"></tr>

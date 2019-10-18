@@ -38,9 +38,9 @@ export class LeftFeatureComponent implements OnInit {
         name: 'Metalchemist',
         icon: '../../../../assets/img/icons/humHom.jpg',
         tabLabel: {
-          tab1: 'main',
-          tab2: 'actions',
-          tab3: 'création'
+          tab1: 'Main',
+          tab2: 'Actions',
+          tab3: 'Création'
         },
         dataSrc: {
           tab1: PERSO_MAIN_DATA,
