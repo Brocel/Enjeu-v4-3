@@ -6,12 +6,12 @@ import { TableCenterModule } from './table-center/table-center.module';
 import { TableRightModule } from './table-right/table-right.module';
 /*Composants*/
 import { TableJeuComponent } from './table-jeu/table-jeu.component';
-import { TableRightComponent } from './table-right/table-right.component';
-import { RightElementComponent } from './table-right/right-element/right-element.component';
-import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
+
 
 @NgModule({
-  declarations: [TableJeuComponent, TableRightComponent, RightElementComponent, RightFeatureComponent],
+  declarations: [
+    TableJeuComponent
+  ],
   imports: [
     SharedModule,
     TableLeftModule,
