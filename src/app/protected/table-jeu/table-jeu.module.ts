@@ -18,11 +18,17 @@ import { AffichageDefautComponent } from './table-center/table-affichage/afficha
 import { TableRightComponent } from './table-right/table-right.component';
 import { RightElementComponent } from './table-right/right-element/right-element.component';
 import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
+import { TableLeftModule } from './table-left/table-left.module';
+import { TableRightModule } from './table-right/table-right.module';
+import { TableCenterModule } from './table-center/table-center.module';
 
 @NgModule({
   declarations: [TableJeuComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
   imports: [
-    SharedModule
+    SharedModule,
+    TableLeftModule,
+    TableRightModule,
+    TableCenterModule
   ]
 })
 export class TableJeuModule { }
