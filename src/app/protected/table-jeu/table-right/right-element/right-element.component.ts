@@ -24,7 +24,6 @@ export class RightElementComponent implements OnInit {
       return this.AFF_COMP;
   };
 
-
 }
 
 export const AFF_COMP: string = 'affDefaut';
