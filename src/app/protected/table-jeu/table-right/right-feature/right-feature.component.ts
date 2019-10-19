@@ -14,16 +14,28 @@ export class RightFeatureComponent implements OnInit {
   ngOnInit() {
     this.features = [
       {
-        title: 'aventure',
-        bouton: 'créer / rejoindre'
+        title: 'enjeu',/*dans game mettre aventure, donjon, tuto*/
+        description: "Rejoindre une partie, un donjon ou s'entraîner",
+        bouton: 'entrer',
+        action: 'affGame'
       },
       {
-        title: 'donjon',
-        bouton: 'entrer'
+        title: 'salon',
+        description: "Discuter avec les rôlistes connectés",
+        bouton: 'entrer',
+        action: 'affChat'
       },
       {
-        title: 'tuto',
-        bouton: 'go !'
+        title: 'fiche personnage',
+        description: "Afficher les détails du personnage principal",
+        bouton: 'montrer',
+        action: 'affDetails'
+      },
+      {
+        title: 'nouveau personnage',
+        description: "Créer un nouveau personnage",
+        bouton: 'créer',
+        action: 'affCreate'
       }
     ];
   }

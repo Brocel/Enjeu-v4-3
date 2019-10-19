@@ -8,12 +8,23 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RightElementComponent implements OnInit {
 
   @Input() title: string;
-  @Input() subTitre: string;
+  @Input() description: string;
   @Input() bouton: string;
+  @Input() action: string;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
   }
 
+  affCompClick() {
+      this.AFF_COMP=this.action;
+      return console.log(this.AFF_COMP);
+      return this.AFF_COMP;
+  };
+
+
 }
+
+export const AFF_COMP: string = 'affDefaut';

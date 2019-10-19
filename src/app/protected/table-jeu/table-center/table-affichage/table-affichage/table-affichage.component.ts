@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AFF_COMP } from '../../../table-right/right-element/right-element.component';
 
 @Component({
   selector: 'enjeu-table-affichage',
@@ -7,23 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableAffichageComponent implements OnInit {
 
-  private affDefaut: boolean;
-  private affChat: boolean;
-  private affCreate: boolean;
-  private affDetails: boolean;
-  private affGame: boolean;
+  affComp = AFF_COMP;
 
   constructor() {
-    this.affDefaut = true;
-    this.affChat = false;
-    this.affCreate = false;
-    this.affDetails = false;
-    this.affGame = false;
   }
 
   ngOnInit() {
   }
-
-
-
 }
