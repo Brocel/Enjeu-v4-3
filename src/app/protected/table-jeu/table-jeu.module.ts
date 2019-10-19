@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TableJeuComponent } from './table-jeu/table-jeu.component';
-/*components de Left*/
-import { TableLeftComponent } from './table-left/table-left.component';
-import { LeftElementComponent } from './table-left/left-element/left-element.component';
-import { LeftFeatureComponent } from './table-left/left-feature/left-feature.component';
-/*components de Center*/
+/*module de Left*/
+import { TableLeftModule } from './table-left/table-left.module';
+/*module de Center*/
 import { TableCenterComponent } from './table-center/table-center.component';
 import { TableHeadComponent } from './table-center/table-head/table-head.component';
 import { TableAffichageComponent } from './table-center/table-affichage/table-affichage.component';
@@ -14,16 +12,15 @@ import { AffichageCreateComponent } from './table-center/table-affichage/afficha
 import { AffichageDetailsComponent } from './table-center/table-affichage/affichage-details/affichage-details.component';
 import { AffichageGameComponent } from './table-center/table-affichage/affichage-game/affichage-game.component';
 import { AffichageDefautComponent } from './table-center/table-affichage/affichage-defaut/affichage-defaut.component';
-/*components de Right*/
+/*module de Right*/
 import { TableRightComponent } from './table-right/table-right.component';
 import { RightElementComponent } from './table-right/right-element/right-element.component';
 import { RightFeatureComponent } from './table-right/right-feature/right-feature.component';
-import { TableLeftModule } from './table-left/table-left.module';
 import { TableRightModule } from './table-right/table-right.module';
 import { TableCenterModule } from './table-center/table-center.module';
 
 @NgModule({
-  declarations: [TableJeuComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableLeftComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent, LeftElementComponent, LeftFeatureComponent],
+  declarations: [TableJeuComponent, TableAffichageComponent, AffichageChatComponent, AffichageCreateComponent, AffichageDetailsComponent, AffichageGameComponent, AffichageDefautComponent, TableCenterComponent, TableRightComponent, TableHeadComponent, RightElementComponent, RightFeatureComponent],
   imports: [
     SharedModule,
     TableLeftModule,
