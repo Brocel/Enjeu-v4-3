@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'enjeu-right-element',
@@ -12,6 +12,12 @@ export class RightElementComponent implements OnInit {
   @Input() bouton: string;
   @Input() action: string;
 
+  @Output() actionOutput = new EventEmitter<string>();
+
+  exportOutput(affCompOutput) {
+    this.actionOutput.emit(affCompOutput);
+    return console.log(affCompOutput);
+  }
 
   constructor() {
    }
@@ -19,11 +25,4 @@ export class RightElementComponent implements OnInit {
   ngOnInit() {
   }
 
-  affCompClick() {
-      return console.log(this.action);
-      return this.action;
-  };
-
 }
-
-export let AFF_COMP=RightElementComponent.affCompClick;

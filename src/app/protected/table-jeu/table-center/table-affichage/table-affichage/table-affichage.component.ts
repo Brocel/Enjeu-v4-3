@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AFF_COMP } from '../../../table-right/right-element/right-element.component';
 
 @Component({
   selector: 'enjeu-table-affichage',
@@ -8,14 +7,16 @@ import { AFF_COMP } from '../../../table-right/right-element/right-element.compo
 })
 export class TableAffichageComponent implements OnInit {
 
-  affComp = AFF_COMP;
+  affComp:string ;
+
+  // importOutput()
 
   constructor() {
   }
 
   ngOnInit() {
   }
-  testAffComp() {
-    return console.log(this.affComp);
-  }
+  // testAffComp() {
+  //   return console.log(this.affComp);
+  // }
 }
