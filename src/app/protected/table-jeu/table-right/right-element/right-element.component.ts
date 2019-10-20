@@ -26,4 +26,4 @@ export class RightElementComponent implements OnInit {
 
 }
 
-export let AFF_COMP=RightElementComponent.affCompClick();
+export let AFF_COMP=RightElementComponent.affCompClick;
