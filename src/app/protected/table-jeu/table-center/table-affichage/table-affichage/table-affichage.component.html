@@ -1,5 +1,5 @@
 <div class="container-fluid p-3 h-100" [ngSwitch]="affComp">
-  <enjeu-affichage-defaut *ngSwitchDefault></enjeu-affichage-defaut>
+  <enjeu-affichage-defaut *ngSwitchDefault (click)="testAffComp()"></enjeu-affichage-defaut>
   <enjeu-affichage-chat class="bGroundAff" *ngSwitchCase="'affChat'"></enjeu-affichage-chat>
   <enjeu-affichage-create class="bGroundAff" *ngSwitchCase="'affCreate'"></enjeu-affichage-create>
   <enjeu-affichage-details class="bGroundAff" *ngSwitchCase="'affDetails'"></enjeu-affichage-details>

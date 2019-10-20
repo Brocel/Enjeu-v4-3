@@ -15,4 +15,7 @@ export class TableAffichageComponent implements OnInit {
 
   ngOnInit() {
   }
+  testAffComp() {
+    return console.log(this.affComp);
+  }
 }

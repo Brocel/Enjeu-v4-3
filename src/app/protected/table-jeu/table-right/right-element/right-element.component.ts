@@ -12,6 +12,8 @@ export class RightElementComponent implements OnInit {
   @Input() bouton: string;
   @Input() action: string;
 
+  public affComp;
+
   constructor() {
    }
 
@@ -19,11 +21,11 @@ export class RightElementComponent implements OnInit {
   }
 
   affCompClick() {
-      AFF_COMP=this.action;
-      return console.log(AFF_COMP);
-      return AFF_COMP;
+      this.affComp = this.action;
+      return console.log(this.affComp);
+      return this.affComp;
   };
 
 }
 
-export let AFF_COMP: string = 'affDefaut';
+export let AFF_COMP;
