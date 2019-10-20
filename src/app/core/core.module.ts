@@ -8,6 +8,8 @@ import { ProtectedModule } from '../protected/protected.module';
 import { AuthService } from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
 import { PersonnagesService } from './services/personnages.service';
+import { AffCompCenterService } from './services/aff-comp-center.service';
+
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -31,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
   providers: [
     AuthService,
     AuthGuardService,
-    PersonnagesService
+    PersonnagesService,
+    AffCompCenterService
   ]
 })
 export class CoreModule {
