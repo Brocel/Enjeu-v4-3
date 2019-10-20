@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule} from  '@angular/forms';
 import { NgxBootstrapModule } from './modules/ngx-bootstrap.module';
 import { AngularMaterialModule } from './modules/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AffCompCenterService } from './services/aff-comp-center.service';
 
 @NgModule({
   declarations: [],
@@ -22,6 +23,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgxBootstrapModule,
     AngularMaterialModule,
     BrowserAnimationsModule
+  ],
+  providers: [
+    AffCompCenterService
   ]
 })
 export class SharedModule { }
