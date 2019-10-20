@@ -19,11 +19,11 @@ export class RightElementComponent implements OnInit {
   }
 
   affCompClick() {
-      this.AFF_COMP=this.action;
-      return console.log(this.AFF_COMP);
-      return this.AFF_COMP;
+      AFF_COMP=this.action;
+      return console.log(AFF_COMP);
+      return AFF_COMP;
   };
 
 }
 
-export const AFF_COMP: string = 'affDefaut';
+export let AFF_COMP: string = 'affDefaut';
