@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AffCompCenterService } from '../../../../shared/services/aff-comp-center.service';
 
 @Component({
   selector: 'enjeu-right-element',
@@ -12,17 +13,24 @@ export class RightElementComponent implements OnInit {
   @Input() bouton: string;
   @Input() action: string;
 
-  @Output() actionOutput = new EventEmitter<string>();
+  // @Output() actionOutput = new EventEmitter<string>();
 
-  exportOutput(affCompOutput) {
-    this.actionOutput.emit(affCompOutput);
-    return console.log(affCompOutput);
-  }
+  // exportOutput(affCompOutput) {
+  //   this.actionOutput.emit(affCompOutput);
+  //   return console.log(affCompOutput);
+  // }
 
-  constructor() {
-   }
+  data: any;
+
+  constructor(private sharedData: AffCompCenterService) { }
+
 
   ngOnInit() {
+    this.sharedData.currentData.subscribe(data => this.data = data);
+  }
+
+  changeData() {
+    this.sharedData.changeData({affComp: this.action});
   }
 
 }
