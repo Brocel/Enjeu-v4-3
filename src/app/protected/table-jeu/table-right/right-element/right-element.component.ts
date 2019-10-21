@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { AffCompCenterService } from '../../../../shared/services/aff-comp-center.service';
 
 @Component({
   selector: 'enjeu-right-element',
