@@ -12,10 +12,11 @@ export class TableAffichageComponent implements OnInit {
 
 
   constructor(private dataAffComp: AffCompCenterService) {
-    this.affCenterComp = this.dataAffComp.affComp ;
+
   }
 
   ngOnInit() {
+    this.affCenterComp = this.dataAffComp.affComp ;
   }
   testAffComp() {
     return console.log(this.affCenterComp);

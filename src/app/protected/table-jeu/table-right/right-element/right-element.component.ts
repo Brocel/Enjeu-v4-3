@@ -17,7 +17,7 @@ export class RightElementComponent implements OnInit {
 
   constructor(private sharedData: AffCompCenterService) {}
 
-  private getComp() {
+  getComp() {
 
     this.dataAffComp = this.sharedData.setComp(this.action);
 

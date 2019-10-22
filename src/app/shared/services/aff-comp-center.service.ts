@@ -5,14 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class AffCompCenterService {
 
-  private affComp: string =  'affDefaut';
+  affComp: string =  'affDefaut';
 
   setComp(action) {
     this.affComp = action;
-    return console.log(this.affComp);
   }
 
   getComp() {
+    console.log(this.affComp);
     return this.affComp;
   }
 
