@@ -20,19 +20,16 @@ export class RightElementComponent implements OnInit {
   //   return console.log(affCompOutput);
   // }
 
-  data: any;
+  sharedData: any;
 
   constructor(private sharedData: AffCompCenterService) {
-    this.sharedData.dataSource = this.action;
+    this.sharedData.affComp = this.action;
   }
 
+  
 
   ngOnInit() {
-    this.sharedData.currentData.subscribe(data => this.data = data);
   }
 
-  changeData() {
-    this.sharedData.changeData({affComp: this.action});
-  }
 
 }

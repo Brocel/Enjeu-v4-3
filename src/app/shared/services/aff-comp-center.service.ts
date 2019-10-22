@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AffCompCenterService {
 
-  private dataSource = new BehaviorSubject({affComp: 'affDefaut'});
-  currentData = this.dataSource.asObservable();
+  private affComp: string =  'affDefaut';
 
-  changeData(data: any) {
-    this.dataSource.next(data);
+  getAffComp() {
+    return this.affComp;
   }
 
 
