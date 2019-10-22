@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.service';
 
 @Component({
   selector: 'enjeu-table-affichage',
@@ -7,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableAffichageComponent implements OnInit {
 
-  affComp:string ;
+  affCenterComp: string;
 
-  // importOutput()
 
-  constructor() {
+  constructor(private dataAffComp: AffCompCenterService) {
+    this.affCenterComp = this.dataAffComp.affComp ;
   }
 
   ngOnInit() {
   }
-  // testAffComp() {
-  //   return console.log(this.affComp);
-  // }
+  testAffComp() {
+    return console.log(this.affCenterComp);
+  }
 }

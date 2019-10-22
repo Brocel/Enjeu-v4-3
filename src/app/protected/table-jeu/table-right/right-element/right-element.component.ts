@@ -13,20 +13,21 @@ export class RightElementComponent implements OnInit {
   @Input() bouton: string;
   @Input() action: string;
 
-  // @Output() actionOutput = new EventEmitter<string>();
+  dataAffComp: any;
 
-  // exportOutput(affCompOutput) {
-  //   this.actionOutput.emit(affCompOutput);
-  //   return console.log(affCompOutput);
-  // }
+  constructor(private sharedData: AffCompCenterService) {}
 
-  sharedData: any;
+  private getComp() {
 
-  constructor(private sharedData: AffCompCenterService) {
-    this.sharedData.affComp = this.action;
+    this.dataAffComp = this.sharedData.setComp(this.action);
+
+    // this.sharedData.affComp = this.action;
+    // this.dataAffComp = this.sharedData.affComp ;
+    // console.log(this.action);
+    console.log(this.dataAffComp);
+    return this.dataAffComp;
   }
 
-  
 
   ngOnInit() {
   }

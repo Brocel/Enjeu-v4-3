@@ -7,11 +7,14 @@ export class AffCompCenterService {
 
   private affComp: string =  'affDefaut';
 
-  getAffComp() {
-    return this.affComp;
+  setComp(action) {
+    this.affComp = action;
+    return console.log(this.affComp);
   }
 
-
+  getComp() {
+    return this.affComp;
+  }
 
   constructor() { }
 }
