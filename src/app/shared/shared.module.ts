@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule} from  '@angular/forms';
 import { NgxBootstrapModule } from './modules/ngx-bootstrap.module';
@@ -24,8 +24,13 @@ import { AffCompCenterService } from './services/aff-comp-center.service';
     AngularMaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [
-    AffCompCenterService
-  ]
+  providers: []
 })
-export class SharedModule { }
+export class SharedModule {
+  static forRoot(): ModuleWithProviders {
+      return {
+        ngModule: SharedModule,
+        providers: [ AffCompCenterService ]
+      };
+    }
+}
