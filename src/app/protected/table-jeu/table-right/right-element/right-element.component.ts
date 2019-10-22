@@ -22,7 +22,9 @@ export class RightElementComponent implements OnInit {
 
   data: any;
 
-  constructor(private sharedData: AffCompCenterService) { }
+  constructor(private sharedData: AffCompCenterService) {
+    this.sharedData.dataSource = this.action;
+  }
 
 
   ngOnInit() {
