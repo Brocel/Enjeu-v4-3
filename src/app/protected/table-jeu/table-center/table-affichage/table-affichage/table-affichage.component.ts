@@ -9,13 +9,15 @@ import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.se
 })
 export class TableAffichageComponent implements OnDestroy {
 
-  compIds: any[] = [];
-  subsrcription: Subscription;
+  compIds:any[]  = [] ;
+  subscription: Subscription;
+
   constructor(private affCompCenterService: AffCompCenterService) {
     // subscribe to right element component compIds
     this.subscription = this.affCompCenterService.getCompId().subscribe(compId => {
       if (compId) {
         this.compIds.push(compId);
+        console.log('ds contructueur:'+compId);
       } else {
         // clear compIds when empty compId received
         this.compIds = [];

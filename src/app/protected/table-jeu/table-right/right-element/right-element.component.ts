@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output} from '@angular/core';
 import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.se
   templateUrl: './right-element.component.html',
   styleUrls: ['./right-element.component.scss']
 })
-export class RightElementComponent implements OnInit {
+export class RightElementComponent {
 
   @Input() title: string;
   @Input() description: string;
