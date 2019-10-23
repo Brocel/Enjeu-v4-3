@@ -17,11 +17,12 @@ export class RightElementComponent {
 
   sendCompId(): void {
     // send compId to subscribers via observable subject
-        this.affCompCenterService.sendCompId(this.action);
+    this.affCompCenterService.sendCompId(this.action);
   }
   clearCompId(): void {
-        // clear messages
-        this.affCompCenterService.clearCompId();
+    // clear messages
+    this.affCompCenterService.clearCompId();
+    console.log('CompId cleared');
     }
 
 }

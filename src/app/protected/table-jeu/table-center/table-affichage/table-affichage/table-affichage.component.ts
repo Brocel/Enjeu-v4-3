@@ -16,8 +16,9 @@ export class TableAffichageComponent implements OnDestroy {
     // subscribe to right element component compIds
     this.subscription = this.affCompCenterService.getCompId().subscribe(compId => {
       if (compId) {
+
         this.compIds.push(compId.text);
-        console.log('ds contructueur:'+compId.text);
+        console.log('tableAff : '+compId.text);
       } else {
         // clear compIds when empty compId received
         this.compIds = [];
@@ -29,4 +30,5 @@ export class TableAffichageComponent implements OnDestroy {
     // unsubscribe to ensure no memory leaks
        this.subscription.unsubscribe();
   }
+
 }
