@@ -1,7 +1,7 @@
-<div class="container-fluid p-3 h-100" [ngSwitch]="affCenterComp" (click)="testAffComp()">
-  <enjeu-affichage-defaut *ngSwitchDefault (click)="testAffComp()"></enjeu-affichage-defaut>
-  <enjeu-affichage-chat class="bGroundAff" *ngSwitchCase="'affChat'" (click)="testAffComp()"></enjeu-affichage-chat>
-  <enjeu-affichage-create class="bGroundAff" *ngSwitchCase="'affCreate'" (click)="testAffComp()"></enjeu-affichage-create>
-  <enjeu-affichage-details class="bGroundAff" *ngSwitchCase="'affDetails'" (click)="testAffComp()"></enjeu-affichage-details>
-  <enjeu-affichage-game class="bGroundAff" *ngSwitchCase="'affGame'" (click)="testAffComp()"></enjeu-affichage-game>
+<div class="container-fluid p-3 h-100" [ngSwitch]="affCenterComp">
+  <enjeu-affichage-defaut *ngSwitchDefault></enjeu-affichage-defaut>
+  <enjeu-affichage-chat class="bGroundAff" *ngSwitchCase="'affChat'"></enjeu-affichage-chat>
+  <enjeu-affichage-create class="bGroundAff" *ngSwitchCase="'affCreate'"></enjeu-affichage-create>
+  <enjeu-affichage-details class="bGroundAff" *ngSwitchCase="'affDetails'"></enjeu-affichage-details>
+  <enjeu-affichage-game class="bGroundAff" *ngSwitchCase="'affGame'"></enjeu-affichage-game>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.service';
 
 @Component({
@@ -6,19 +7,24 @@ import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.se
   templateUrl: './table-affichage.component.html',
   styleUrls: ['./table-affichage.component.scss']
 })
-export class TableAffichageComponent implements OnInit {
+export class TableAffichageComponent implements OnDestroy {
 
-  affCenterComp: string;
-
-
-  constructor(private dataAffComp: AffCompCenterService) {
-
+  compIds: any[] = [];
+  subsrcription: Subscription;
+  constructor(private affCompCenterService: AffCompCenterService) {
+    // subscribe to right element component compIds
+    this.subscription = this.affCompCenterService.getCompId().subscribe(compId => {
+      if (compId) {
+        this.compIds.push(compId);
+      } else {
+        // clear compIds when empty compId received
+        this.compIds = [];
+      }
+    });
   }
 
-  ngOnInit() {
-    this.affCenterComp = this.dataAffComp.affComp ;
-  }
-  testAffComp() {
-    return console.log(this.affCenterComp);
+  ngOnDestroy() {
+    // unsubscribe to ensure no memory leaks
+       this.subscription.unsubscribe();
   }
 }
