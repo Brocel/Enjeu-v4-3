@@ -8,7 +8,7 @@ export class AffCompCenterService {
 
   private subject = new Subject<any>();
 
-  sendCompId(compId: string) {
+    sendCompId(compId: string) {
         this.subject.next({ text: compId });
     }
 

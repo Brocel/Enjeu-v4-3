@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.service';
 
 @Component({
@@ -11,26 +11,17 @@ export class RightElementComponent implements OnInit {
   @Input() title: string;
   @Input() description: string;
   @Input() bouton: string;
-  @Input() action: string;
+  @Input() action: string;//string action onclic bouton (affDefaut, affDétails, etc.)
 
-  dataAffComp: any;
+  constructor(private affCompCenterService: AffCompCenterService) {}
 
-  constructor(private sharedData: AffCompCenterService) {}
-
-  getComp() {
-
-    this.dataAffComp = this.sharedData.setComp(this.action);
-
-    // this.sharedData.affComp = this.action;
-    // this.dataAffComp = this.sharedData.affComp ;
-    // console.log(this.action);
-    console.log(this.dataAffComp);
-    return this.dataAffComp;
+  sendCompId(): void {
+    // send compId to subscribers via observable subject
+        this.affCompCenterService.sendCompId(this.action);
   }
-
-
-  ngOnInit() {
-  }
-
+  clearCompId(): void {
+        // clear messages
+        this.affCompCenterService.clearCompId();
+    }
 
 }
