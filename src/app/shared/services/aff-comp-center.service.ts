@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AffCompCenterService {
 
-  private subject = new BehaviorSubject<any>();
+  private subject = new Subject<any>();
 
     sendCompId(compId: string) {
-      this.subject.next({ text: compId });
+      this.subject.next(compId);
     }
 
     clearCompId() {

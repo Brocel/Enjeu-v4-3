@@ -9,21 +9,28 @@ import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.se
 })
 export class TableAffichageComponent implements OnDestroy {
 
-  compIds:any[]  = [] ;
+  affComp:string;
   subscription: Subscription;
 
   constructor(private affCompCenterService: AffCompCenterService) {
     // subscribe to right element component compIds
-    this.subscription = this.affCompCenterService.getCompId().subscribe(compId => {
-      if (compId) {
-
-        this.compIds.push(compId.text);
-        console.log('tableAff : '+compId.text);
-      } else {
-        // clear compIds when empty compId received
-        this.compIds = [];
+    this.subscription = this.affCompCenterService.getCompId().subscribe(
+      (compId) => {
+        if (compId) {
+          this.affComp = compId;
+          console.log('tableAff : '+this.affComp);
+        } else {
+          // clear compIds when empty compId received
+          this.affComp = "affDefaut";
+        }
+      },
+      (error) => {
+        console.log('Uh-oh, an error occurred! : ' + error);
+      },
+      () => {
+        console.log('Observable complete!');
       }
-    });
+    );
   }
 
   ngOnDestroy() {
