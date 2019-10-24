@@ -21,7 +21,7 @@ export class LeftFeatureComponent implements OnInit {
 
     this.features = [
       {
-        name: 'Brocel',
+        name: 'brocel',
         icon: '../../../../assets/img/icons/mdjIcone.jpg',
         tabLabel: {
           tab1: 'Informations',
@@ -35,7 +35,7 @@ export class LeftFeatureComponent implements OnInit {
         }
       },
       {
-        name: 'Metalchemist',
+        name: 'metalchemist',
         icon: '../../../../assets/img/icons/humHom.jpg',
         tabLabel: {
           tab1: 'Main',
