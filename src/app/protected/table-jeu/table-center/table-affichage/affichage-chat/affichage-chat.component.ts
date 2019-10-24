@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AffCompCenterService } from 'src/app/shared/services/aff-comp-center.service';
+
 
 @Component({
   selector: 'enjeu-affichage-chat',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AffichageChatComponent implements OnInit {
 
-  constructor() { }
+  constructor(private affCompCenterService: AffCompCenterService) { }
 
   ngOnInit() {
+  }
+
+  affDefaut(): void {
+    this.affCompCenterService.sendCompId("affDefaut");
   }
 
 }
